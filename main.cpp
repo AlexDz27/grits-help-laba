@@ -1,5 +1,3 @@
-// TODO: 1. OOP (kinda like they had) 2. Separate func for including DLL
-
 #include <iostream>
 #include <windows.h>
 
@@ -45,6 +43,7 @@ int main() {
     double momentum = calculateMomentum(mass, velocity);
     std::cout << "Импульс: " << momentum << " кг·м/с" << std::endl;
 
+    system("pause");
     FreeLibrary(hDLL);
     return 0;
 }

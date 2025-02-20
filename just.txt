@@ -1,0 +1,11 @@
+g++ -static main.cpp -o main.exe -L -ldll - чтоб статично
+
+
+// TODO: 1. OOP (kinda like they had) 2. Separate func for including DLL
+
+
+
+
+
+1. Зач ДЛЛ
+2. Показать как с Вижловским компайлером можно это сделать
