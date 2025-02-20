@@ -24,13 +24,14 @@ int main() {
         return 1;
     }
 
-    // TODO: а еще calculateMass юзать?
-    // TODO: вас так учили скорость света писать?
     SetConsoleOutputCP(CP_UTF8);
     double mass = 10.0; // масса в килограммах
     double acceleration = 9.81; // ускорение в м/с^2
     double force = calculateForce(mass, acceleration);
     std::cout << "Сила: " << force << " Н" << std::endl;
+
+    mass = calculateMass(force, acceleration);
+    std::cout << "Масса: " << mass << " кг" << std::endl;
 
     double energy = calculateEnergy(mass);
     std::cout << "Энергия: " << energy << " Дж" << std::endl;
